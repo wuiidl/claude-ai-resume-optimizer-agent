@@ -1,5 +1,8 @@
 # Resume Optimizer - AI-Powered ATS Resume Tailoring & LinkedIn Optimization
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub](https://img.shields.io/badge/GitHub-wuiidl%2Fresume--optimizer-blue)](https://github.com/wuiidl/resume-optimizer)
+
 An intelligent career optimization system powered by Claude Code that generates ATS-optimized, keyword-matched resumes and optimizes LinkedIn profiles for recruiter visibility. Uses Claude AI agents to analyze job requirements and create customized career materials while maintaining authenticity and never fabricating information.
 
 ## 🎯 What This Does
@@ -371,8 +374,14 @@ ls .claude/agents/
 
 ## 🤝 Contributing
 
-Contributions are welcome! Areas for improvement:
+Contributions are welcome! Please visit the [GitHub repository](https://github.com/wuiidl/resume-optimizer) to:
 
+- Report bugs or issues
+- Suggest new features
+- Submit pull requests
+- Share feedback
+
+**Areas for improvement:**
 - Additional resume templates
 - Support for more output formats (LaTeX, HTML)
 - Cover letter generation agent
@@ -380,6 +389,13 @@ Contributions are welcome! Areas for improvement:
 - Additional LinkedIn optimization features
 - Job application tracking system
 - Salary negotiation guidance
+
+**How to contribute:**
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ## 📄 License
 
@@ -395,6 +411,14 @@ The above copyright notice and this permission notice shall be included in all c
 
 - Built with [Claude Code](https://docs.anthropic.com/claude/docs/claude-code) by Anthropic
 - PDF generation powered by [Pandoc](https://pandoc.org/)
+
+---
+
+## 👤 Author
+
+**Walter Gugenberger**
+- GitHub: [@wuiidl](https://github.com/wuiidl)
+- LinkedIn: [waltergugenberger](https://www.linkedin.com/in/waltergugenberger/)
 
 ---
 

@@ -6,8 +6,8 @@
     "location": "City, State/Region",
     "linkedin": "https://www.linkedin.com/in/yourprofile/",
     "github": "https://github.com/yourusername",
-    "website": "https://yourwebsite.com",
-    "citizenship": "Optional: Country (if relevant for job applications)"
+    "website": "https://yourwebsite.com (optional)",
+    "citizenship": "Country (optional - if relevant for job applications)"
   },
   "summary": "Software engineer with X+ years of experience building [domain expertise]. Specializing in [key skills] with proven track record of [major achievements]. Experience with [technologies] at [scale/context].",
   "skills": {

@@ -25,6 +25,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Allows free use, modification, and distribution
   - Requires copyright notice in all copies
   - Prevents others from claiming authorship
+- **GitHub repository links** - Added throughout README
+  - GitHub badges at top of README
+  - Author section with GitHub profile link
+  - Contributing section with repository link
+  - Repository: https://github.com/wuiidl/resume-optimizer
 
 ### Changed
 - **Resume formatting standards updated:**
