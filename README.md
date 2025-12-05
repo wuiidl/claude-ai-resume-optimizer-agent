@@ -35,21 +35,15 @@ This project uses Claude Code's agent system to:
 
    # Ubuntu/Debian
    sudo apt-get install pandoc
-
-   # Windows
-   choco install pandoc
    ```
 
-3. **LaTeX** - For PDF rendering (choose one):
+3. **LaTeX** - For PDF rendering:
    ```bash
    # macOS (recommended: smaller install)
    brew install --cask basictex
 
    # Ubuntu/Debian
    sudo apt-get install texlive-latex-base texlive-fonts-recommended
-
-   # Windows
-   # Install MiKTeX from https://miktex.org/download
    ```
 
 ## 🚀 Quick Start
