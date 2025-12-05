@@ -21,6 +21,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Overwrites existing PDFs
   - Color-coded progress output
   - Dependency checking (pandoc, LaTeX)
+- **MIT License** - Open source license with attribution requirement
+  - Allows free use, modification, and distribution
+  - Requires copyright notice in all copies
+  - Prevents others from claiming authorship
 
 ### Changed
 - **Resume formatting standards updated:**
