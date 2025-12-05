@@ -57,14 +57,22 @@ install_macos() {
 
     # Install BasicTeX
     if ! command_exists pdflatex; then
-        echo -e "${YELLOW}Installing BasicTeX (LaTeX distribution)...${NC}"
-        echo -e "${YELLOW}This may take a few minutes...${NC}"
-        brew install --cask basictex
+        # Check if BasicTeX is installed but not in PATH
+        if [ -f "/Library/TeX/texbin/pdflatex" ]; then
+            echo -e "${GREEN}✓ BasicTeX found, adding to PATH${NC}"
+            export PATH="/Library/TeX/texbin:$PATH"
+        else
+            echo -e "${YELLOW}Installing BasicTeX (LaTeX distribution)...${NC}"
+            echo -e "${YELLOW}This may take a few minutes...${NC}"
+            brew install --cask basictex
 
-        # Add to PATH for current session
-        export PATH="/Library/TeX/texbin:$PATH"
+            # Add to PATH for current session
+            export PATH="/Library/TeX/texbin:$PATH"
+        fi
 
-        echo -e "${YELLOW}You may need to restart your terminal for LaTeX to be available${NC}"
+        echo -e "${YELLOW}Note: You may need to run this in future terminal sessions:${NC}"
+        echo -e "${YELLOW}  export PATH=\"/Library/TeX/texbin:\$PATH\"${NC}"
+        echo -e "${YELLOW}Or restart your terminal to pick up the PATH${NC}"
     else
         echo -e "${GREEN}✓ LaTeX already installed ($(pdflatex --version | head -n1))${NC}"
     fi

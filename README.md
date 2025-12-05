@@ -1,16 +1,24 @@
-# Resume Optimizer - AI-Powered ATS Resume Tailoring
+# Resume Optimizer - AI-Powered ATS Resume Tailoring & LinkedIn Optimization
 
-An intelligent resume optimization system powered by Claude Code that generates ATS-optimized, keyword-matched resumes tailored to specific job postings. Uses Claude AI agents to analyze job requirements and create customized resumes while maintaining authenticity and never fabricating information.
+An intelligent career optimization system powered by Claude Code that generates ATS-optimized, keyword-matched resumes and optimizes LinkedIn profiles for recruiter visibility. Uses Claude AI agents to analyze job requirements and create customized career materials while maintaining authenticity and never fabricating information.
 
 ## 🎯 What This Does
 
 This project uses Claude Code's agent system to:
 
+### Resume Optimization
 1. **Analyze job postings** - Extract key requirements, skills, and keywords from job descriptions
 2. **Tailor your resume** - Customize your resume content to match each specific role
 3. **Optimize for ATS** - Format resumes to pass Applicant Tracking Systems
 4. **Generate PDFs** - Create professional PDF versions using Pandoc
 5. **Maintain authenticity** - Never fabricates achievements or makes up numbers
+
+### LinkedIn Optimization
+1. **Recruiter search optimization** - Keyword strategy and LinkedIn SEO
+2. **Profile analysis** - Headline, about section, experience bullets, skills selection
+3. **Privacy-first job searching** - Get found by recruiters without alerting colleagues
+4. **Content strategy** - Posting and engagement recommendations
+5. **Complete profile rewrites** - Ready-to-use optimized sections
 
 ### Key Features
 
@@ -41,6 +49,9 @@ This project uses Claude Code's agent system to:
    ```bash
    # macOS (recommended: smaller install)
    brew install --cask basictex
+   # After install, add to PATH:
+   export PATH="/Library/TeX/texbin:$PATH"
+   # Or restart your terminal
 
    # Ubuntu/Debian
    sudo apt-get install texlive-latex-base texlive-fonts-recommended
@@ -179,6 +190,36 @@ The `.claude/resume-optimizer-agent.md` file contains the agent configuration an
    - Create both Markdown (.md) and PDF (.pdf) versions
    - Organize outputs into `output/company-name/` folders
 
+### Running the LinkedIn Optimizer
+
+1. **Start Claude Code** in this directory:
+   ```bash
+   claude-code
+   ```
+
+2. **Invoke the linkedin-optimizer agent**:
+   ```
+   Can you help me optimize my LinkedIn profile for [target role]?
+   ```
+
+   Or for specific sections:
+   ```
+   Can you help me write a better LinkedIn headline for senior software engineer roles?
+   ```
+
+   Or for privacy-focused optimization:
+   ```
+   I want recruiters to find me but I don't want my manager to know I'm looking
+   ```
+
+3. **The agent will**:
+   - Analyze your current profile or resume data
+   - Provide keyword optimization recommendations
+   - Rewrite headline, about section, or experience bullets
+   - Suggest skills to add/remove and top 3 to pin
+   - Recommend privacy settings for discreet job searching
+   - Provide content and engagement strategy
+
 ### Output Structure
 
 ```
@@ -194,16 +235,36 @@ output/
     └── google-staff-engineer.pdf
 ```
 
+### Regenerating PDFs
+
+If you make changes to markdown resumes and want to regenerate all PDFs:
+
+```bash
+./regenerate-pdfs.sh
+```
+
+This script will:
+- Find all `.md` files in `output/` directory
+- Regenerate PDFs with consistent formatting
+- Overwrite existing PDF files
+- Show progress with color-coded output
+
 ## 📁 Project Structure
 
 ```
 resume/
 ├── .claude/
-│   └── resume-optimizer-agent.md    # Agent configuration
+│   └── agents/
+│       ├── resume-optimizer.md       # Resume tailoring agent
+│       └── linkedin-optimizer.md     # LinkedIn optimization agent
 ├── .gitignore                        # Excludes personal data
 ├── README.md                         # This file
+├── CHANGELOG.md                      # Version history
 ├── CLAUDE.md                         # Agent rules and documentation
+├── setup.sh                          # Automated setup script (macOS/Linux)
+├── regenerate-pdfs.sh                # Regenerate all PDFs from markdown
 ├── my_resume.json                    # Your resume data (gitignored)
+├── my_resume.json.example            # Template to get started
 ├── job-postings/                     # Job descriptions (gitignored)
 │   ├── company1-role.txt
 │   └── company2-role.txt
@@ -272,6 +333,12 @@ chmod +x setup.sh
 # macOS
 brew install --cask basictex
 
+# After installing BasicTeX, add to PATH:
+export PATH="/Library/TeX/texbin:$PATH"
+
+# Or add permanently to your shell profile (~/.zshrc or ~/.bash_profile):
+echo 'export PATH="/Library/TeX/texbin:$PATH"' >> ~/.zshrc
+
 # Linux (Ubuntu/Debian)
 sudo apt-get install texlive-latex-base texlive-fonts-recommended
 
@@ -279,7 +346,9 @@ sudo apt-get install texlive-latex-base texlive-fonts-recommended
 pdflatex --version
 ```
 
-**Note**: After installing LaTeX, you may need to restart your terminal.
+**Note**: After installing BasicTeX on macOS, you need to either:
+1. Run `export PATH="/Library/TeX/texbin:$PATH"` in your current terminal, OR
+2. Restart your terminal to pick up the PATH automatically
 
 ### Agent not found
 
@@ -306,9 +375,11 @@ Contributions are welcome! Areas for improvement:
 
 - Additional resume templates
 - Support for more output formats (LaTeX, HTML)
-- Cover letter generation
-- Interview preparation guides
-- LinkedIn profile optimization
+- Cover letter generation agent
+- Interview preparation agent
+- Additional LinkedIn optimization features
+- Job application tracking system
+- Salary negotiation guidance
 
 ## 📄 License
 

@@ -26,10 +26,34 @@ This project uses the Claude AI resume-optimizer agent to create ATS-optimized, 
    - Keep it truthful and grounded
 
 4. **Length Requirements**
-   - Target 1-2 pages maximum
-   - Condense older/less relevant roles
+   - **Maximum: 2.5 pages** (not full 3 pages)
+   - Target: 2 pages for most candidates
+   - Senior candidates (10+ years): Up to 2.5 pages maximum
+   - Condense older/less relevant roles (5+ years old)
+   - Group older roles under "Earlier Experience" section
    - Prioritize most recent and relevant experience
-   - Remove redundant sections
+
+5. **Header Formatting Rules**
+   - **Title (H1)**: Applicant's name ONLY
+   - **Subtitle**: Location in bold immediately under name
+   - **Contact Info**: All items separated by "|" (pipe character)
+   - **NEVER use emojis ANYWHERE in resume**: This is a professional service
+   - **No special characters**: Standard punctuation only (periods, commas, bullets)
+   - **Example:**
+     ```markdown
+     # John Smith
+
+     **San Francisco, CA**
+
+     john.smith@email.com | +1 555 123 4567
+     linkedin.com/in/johnsmith | U.S. Citizen
+     ```
+
+6. **Professional Standards**
+   - **NO emojis** - Ever. Anywhere. This is a professional service.
+   - **NO special characters or icons** - Use standard punctuation only
+   - **Simple bullet points** - Use -, *, or • (not emoji bullets)
+   - **Professional tone** - Authentic, grounded, no buzzwords
 
 ## File Organization
 
