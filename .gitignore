@@ -1,0 +1,34 @@
+# Personal resume data (DO NOT COMMIT)
+my_resume.json
+
+# Job postings (user-specific)
+job-postings/
+
+# Generated resume outputs (user-specific)
+output/
+
+# Personal LinkedIn optimization guide
+LINKEDIN_OPTIMIZATION.md
+
+# Personal level mapping guide
+AMAZON_LEVEL_MAPPING.md
+
+# Personal interview study plan
+INTERVIEW_STUDY_PLAN.md
+
+# Claude Code local settings (may contain API keys or personal preferences)
+.claude/settings.local.json
+
+# macOS
+.DS_Store
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.bak

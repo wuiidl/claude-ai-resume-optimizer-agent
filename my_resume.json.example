@@ -1,0 +1,158 @@
+{
+  "contact": {
+    "name": "Your Full Name",
+    "email": "your.email@example.com",
+    "phone": "+1 555 123 4567",
+    "location": "City, State/Region",
+    "linkedin": "https://www.linkedin.com/in/yourprofile/",
+    "github": "https://github.com/yourusername",
+    "website": "https://yourwebsite.com",
+    "citizenship": "Optional: Country (if relevant for job applications)"
+  },
+  "summary": "Software engineer with X+ years of experience building [domain expertise]. Specializing in [key skills] with proven track record of [major achievements]. Experience with [technologies] at [scale/context].",
+  "skills": {
+    "languages": [
+      "Python",
+      "Java",
+      "JavaScript",
+      "TypeScript",
+      "Go"
+    ],
+    "frameworks": [
+      "React",
+      "Spring Boot",
+      "Django",
+      "Node.js"
+    ],
+    "tools": [
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "Git",
+      "Jenkins"
+    ],
+    "databases": [
+      "PostgreSQL",
+      "MongoDB",
+      "Redis",
+      "DynamoDB"
+    ],
+    "concepts": [
+      "Distributed Systems",
+      "Microservices",
+      "CI/CD",
+      "System Design",
+      "API Design"
+    ]
+  },
+  "experience": [
+    {
+      "company": "Current Company Name",
+      "title": "Your Current Title (e.g., Senior Software Engineer, Tech Lead)",
+      "location": "City, State",
+      "start_date": "Month Year",
+      "end_date": "Present",
+      "description": "Brief 1-2 sentence overview of your role, the product/team, and scale.",
+      "achievements": [
+        "Led development of [feature/system] that [quantified impact - e.g., 'reduced costs by $X', 'improved performance by Y%', 'scaled to Z requests']",
+        "Architected and implemented [technical solution] for [business problem], resulting in [measurable outcome]",
+        "Shipped [customer-facing feature] that [customer impact - e.g., 'served X million users', 'became top-requested feature']",
+        "Reduced [operational metric] by X% through [technical approach - e.g., 'automation', 'optimization', 'redesign']",
+        "Mentored X engineers, helping them deliver [specific outcomes]",
+        "Led cross-team initiative to [project] involving [scope - teams, timeline, complexity]"
+      ]
+    },
+    {
+      "company": "Previous Company Name",
+      "title": "Your Previous Title",
+      "location": "City, State",
+      "start_date": "Month Year",
+      "end_date": "Month Year",
+      "description": "Brief description of role and context.",
+      "achievements": [
+        "Built [system/feature] from the ground up using [technologies], serving [scale/users]",
+        "Improved [metric] by X% by [technical approach]",
+        "Collaborated with [teams/stakeholders] to deliver [project] within [timeline/constraints]"
+      ]
+    },
+    {
+      "company": "Earlier Company",
+      "title": "Software Engineer",
+      "location": "City, State",
+      "start_date": "Month Year",
+      "end_date": "Month Year",
+      "description": "Brief description.",
+      "achievements": [
+        "Developed [feature] using [technologies]",
+        "Contributed to [project] that [impact]"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University Name",
+      "degree": "Master of Science (M.S.)",
+      "field": "Computer Science",
+      "location": "City, Country",
+      "graduation_date": "Year",
+      "details": [
+        "Focus: Distributed Systems, Machine Learning (optional)",
+        "Thesis: 'Title of thesis' (if applicable)",
+        "GPA: 3.9/4.0 (only if strong)",
+        "Relevant coursework: Advanced Algorithms, Distributed Systems",
+        "Awards/honors (if applicable)"
+      ]
+    },
+    {
+      "institution": "University Name",
+      "degree": "Bachelor of Science (B.S.)",
+      "field": "Computer Science",
+      "location": "City, Country",
+      "graduation_date": "Year",
+      "details": [
+        "Graduated with Honors (if applicable)",
+        "Dean's List (if applicable)"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Notable Open Source Project or Side Project",
+      "description": "Brief description of what the project does and why it matters",
+      "technologies": [
+        "Tech1",
+        "Tech2",
+        "Tech3"
+      ],
+      "achievements": [
+        "X GitHub stars / X contributors (if open source)",
+        "Specific technical achievement or impact",
+        "Users or adoption metric (if applicable)"
+      ],
+      "url": "https://github.com/username/project (optional)"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Certified Solutions Architect - Professional",
+      "issuer": "Amazon Web Services",
+      "date": "Year"
+    }
+  ],
+  "languages": [
+    "English (Native/Fluent)",
+    "Spanish (Professional Working Proficiency)",
+    "Mandarin (Elementary)"
+  ],
+  "additional": {
+    "volunteer": [
+      "Role at Organization - Brief description of volunteer work (if relevant)"
+    ],
+    "publications": [
+      "Paper title, Conference/Journal, Year (if applicable)"
+    ],
+    "patents": [
+      "Patent title, Patent number (if applicable)"
+    ]
+  }
+}
