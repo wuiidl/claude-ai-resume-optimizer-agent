@@ -36,7 +36,8 @@ This project uses the Claude AI resume-optimizer agent to create ATS-optimized, 
 5. **Header Formatting Rules**
    - **Title (H1)**: Applicant's name ONLY
    - **Subtitle**: Location in bold immediately under name
-   - **Contact Info**: All items separated by "|" (pipe character)
+   - **Contact Info**: ALL items on ONE line, separated by "|" (pipe character)
+   - **NO line breaks** between contact items - everything on single line
    - **NEVER use emojis ANYWHERE in resume**: This is a professional service
    - **No special characters**: Standard punctuation only (periods, commas, bullets)
    - **Example:**
@@ -45,8 +46,7 @@ This project uses the Claude AI resume-optimizer agent to create ATS-optimized, 
 
      **San Francisco, CA**
 
-     john.smith@email.com | +1 555 123 4567
-     linkedin.com/in/johnsmith | U.S. Citizen
+     john.smith@email.com | +1 555 123 4567 | linkedin.com/in/johnsmith | github.com/johnsmith | U.S. Citizen
      ```
 
 6. **Professional Standards**
@@ -60,6 +60,13 @@ This project uses the Claude AI resume-optimizer agent to create ATS-optimized, 
 ### Input Files
 
 - **`my_resume.json`**: Master resume data containing all experience, education, skills
+- **`career_preferences.json`**: Career goals and target role preferences (NEW!)
+  - Target role types (e.g., "Distributed Systems Engineering", "Technical Leadership")
+  - Role types to avoid (e.g., "8+ years ML required" when limited ML experience)
+  - Current level and equivalent levels at other companies
+  - Key strengths and areas to develop
+  - Company preferences and career goals
+  - Special considerations (clearance eligibility, privacy concerns, etc.)
 - **`job-postings/`**: Folder containing job posting text files
   - Example: `job-postings/meta-software-engineer.txt`
   - Example: `job-postings/netflix-job-ads.txt`

@@ -149,7 +149,54 @@ Create a file called `my_resume.json` in the root directory with your informatio
 
 **Important**: The `my_resume.json` file is gitignored - your personal data stays private.
 
-### 3. Add job postings
+### 3. Create your career preferences file (NEW!)
+
+Create a file called `career_preferences.json` to help the agent understand your career goals and target roles:
+
+```json
+{
+  "target_role_types": [
+    "Backend Engineering",
+    "Distributed Systems Engineering",
+    "Infrastructure Engineering",
+    "Technical Leadership (IC track)"
+  ],
+  "avoid_role_types": [
+    "Roles requiring 8+ years ML experience (if you don't have it)",
+    "Frontend-only roles",
+    "Management (EM track)"
+  ],
+  "target_level": {
+    "current_level": "Your current level (e.g., 'Google L5 Senior SWE')",
+    "targeting": "Same level or one level up",
+    "notes": "Important level mapping notes"
+  },
+  "key_strengths": [
+    "Your top technical and leadership strengths",
+    "Domain expertise areas"
+  ],
+  "areas_to_develop": [
+    "Skills you're still building",
+    "Technologies with limited experience"
+  ],
+  "career_goals": {
+    "short_term": "What you want in your next role",
+    "long_term": "Career aspirations 3-5+ years out"
+  }
+}
+```
+
+**Why this matters**: The agent uses this to:
+- Assess fit for each role (e.g., "85% match - strong technical fit, slight gap in ML")
+- Correctly position your level (avoid applying to roles too junior/senior)
+- Emphasize relevant experiences for your target role types
+- Flag gaps honestly when roles require expertise you don't have
+
+**Important**: This file is also gitignored - your career plans stay private.
+
+See `career_preferences.json.example` for a complete template with all available fields.
+
+### 4. Add job postings
 
 The `job-postings/` directory already exists. Add job descriptions as `.txt` files (e.g., `company-role-name.txt`):
 

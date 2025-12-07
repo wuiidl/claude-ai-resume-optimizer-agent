@@ -1,0 +1,58 @@
+{
+  "target_role_types": [
+    "Backend Engineering",
+    "Full-Stack Engineering",
+    "Infrastructure Engineering",
+    "Distributed Systems Engineering",
+    "Technical Leadership (IC track)",
+    "Product Engineering"
+  ],
+  "avoid_role_types": [
+    "Management (EM track)",
+    "Frontend-only roles",
+    "Roles requiring domain expertise you don't have (e.g., 8+ years ML)"
+  ],
+  "target_level": {
+    "current_level": "Your current level and title (e.g., 'Google L5 Senior Software Engineer')",
+    "equivalent_levels": {
+      "Meta": "E5 (Senior), E6 (Staff), etc.",
+      "Netflix": "Senior Software Engineer, Staff Engineer, etc.",
+      "Google": "L5 (Senior), L6 (Staff), etc.",
+      "Amazon": "L5 (SDE II), L6 (Senior SDE), L7 (Principal)",
+      "Startup": "Senior, Staff, Principal"
+    },
+    "targeting": "Same level or one level up",
+    "notes": "Any important notes about level mapping (e.g., 'Amazon L5 ≠ Senior title, that's L6')"
+  },
+  "key_strengths": [
+    "List your top technical and leadership strengths",
+    "Technologies you're expert in",
+    "Domain expertise (e.g., distributed systems, ML, mobile)",
+    "Soft skills (e.g., mentoring, cross-functional collaboration)"
+  ],
+  "areas_to_develop": [
+    "Skills you're still building",
+    "Technologies you have limited experience with",
+    "Domain areas where you lack depth"
+  ],
+  "company_preferences": {
+    "target_companies": [
+      "List specific companies you're targeting",
+      "Or types of companies (e.g., 'FAANG', 'High-growth startups')"
+    ],
+    "company_size": "Preference for company size/stage (e.g., 'Series B+ startups', 'Large tech companies')",
+    "location_preferences": "Remote, specific cities, or open to relocation"
+  },
+  "career_goals": {
+    "short_term": "What you want in your next role (1-2 years)",
+    "long_term": "Career aspirations (3-5+ years)",
+    "motivation": "What drives you professionally (technical challenges, impact, mentoring, etc.)"
+  },
+  "special_considerations": {
+    "clearance_eligible": "If applicable for defense/government work",
+    "privacy_concerns": "Any job search privacy needs (e.g., currently employed)",
+    "referrals": "Companies where you have referrals or connections",
+    "work_authorization": "If relevant (e.g., 'U.S. Citizen', 'Requires visa sponsorship')",
+    "other": "Any other relevant considerations"
+  }
+}

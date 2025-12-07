@@ -8,6 +8,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Career Preferences Integration** (`career_preferences.json`) - NEW strategic career planning feature
+  - Define target role types (e.g., "Distributed Systems Engineering", "Technical Leadership")
+  - Specify role types to avoid (e.g., "8+ years ML required" when limited ML experience)
+  - Current level and equivalent levels across companies for proper positioning
+  - Key strengths and areas to develop for honest gap assessment
+  - Company preferences and career goals (short-term and long-term)
+  - Special considerations (clearance eligibility, privacy concerns, referrals)
+  - Example file: `career_preferences.json.example`
+- **Enhanced Resume Optimizer Agent** - Now reads career preferences before tailoring
+  - Strategic fit assessment for each job (e.g., "85% match - strong fit, slight ML gap")
+  - Level-specific tailoring strategy (same-level vs. level-up positioning)
+  - Honest gap flagging when roles require expertise in "areas to develop"
+  - Alignment with target_role_types for better experience highlighting
+  - Respects privacy concerns and special considerations
 - LinkedIn profile optimizer agent (`.claude/agents/linkedin-optimizer.md`)
 - LinkedIn SEO and keyword optimization
 - Privacy-focused job search recommendations
@@ -34,12 +48,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - **Resume formatting standards updated:**
   - Header format: Name as H1 title, location as bold subtitle
-  - All contact information must be separated by "|" (pipe character)
+  - **ALL contact information on ONE line, separated by "|" (pipe character)** - NO line breaks between items
   - **NEVER use emojis ANYWHERE in resumes** - Professional service standard
   - No special characters or icons (standard punctuation only)
-  - Maximum page length: 2.5 pages (target: 2 pages)
-  - Older roles (5+ years) should be condensed under "Earlier Experience"
-- Updated resume-optimizer agent with strict professional formatting rules
+  - **Strict page length enforcement: 85 lines MAX (60-70 target = 2 pages)**
+  - Current role: 6-8 bullets MAX, previous roles: 3-4 bullets MAX
+  - Older roles (5+ years) should be condensed under "Earlier Experience" with 1 line each
+- Updated resume-optimizer agent with strict professional formatting rules and line counting
 - Updated CLAUDE.md documentation with professional standards section
 - Emphasized NO emojis policy throughout all resume generation
 

@@ -1,5 +1,6 @@
 # Personal resume data (DO NOT COMMIT)
 my_resume.json
+career_preferences.json
 
 # Job postings (user-specific)
 job-postings/
@@ -7,8 +8,9 @@ job-postings/
 # Generated resume outputs (user-specific)
 output/
 
-# Personal LinkedIn optimization guide
+# Personal LinkedIn optimization guides
 LINKEDIN_OPTIMIZATION.md
+LINKEDIN_OPTIMIZATION_STRATEGY.md
 
 # Personal level mapping guide
 AMAZON_LEVEL_MAPPING.md
